@@ -216,7 +216,7 @@ summary(df_scatter$psi_eRA)
 table(df_scatter$high_effect)
 
 
-# 散点图 ---------------------------------------------------------------------
+# plot ---------------------------------------------------------------------
 #pdf("./AS_rMATS_jcast/rMATS/result/rmats_plots/dot_plot/HC_eRA.pdf",width = 8,height = 6)
 p_scatter <- ggplot(df_scatter, aes(x = psi_HC, y = psi_eRA)) +
   geom_point(aes(color = direction, size = abs_dpsi, alpha = high_effect)) +
