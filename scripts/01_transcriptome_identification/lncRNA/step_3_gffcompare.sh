@@ -10,7 +10,7 @@ ref_gtf="./reference/Homo_sapiens.GRCh38.113.gtf"
 outdir="./lncRNA/StringTie/result/step_3_gffcompare"
 mkdir -p "$outdir"
 
-# 运行 gffcompare
+#  gffcompare
 gffcompare \
     -r "$ref_gtf" \
     -o "$outdir/compare" \
