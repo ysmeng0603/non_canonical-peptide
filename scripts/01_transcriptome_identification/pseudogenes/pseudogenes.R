@@ -74,7 +74,7 @@ summary(res)
 res_df <- as.data.frame(res)
 res_df$pseudogene_id <- rownames(res_df) # 
 res_df <- na.omit(res_df) # 
-# 添加一列用于火山图的显著性标记
+# 
 res_df$significance <- ifelse(res_df$padj < 0.05 & abs(res_df$log2FoldChange) > 1, 
                               ifelse(res_df$log2FoldChange > 0, "Up", "Down"), 
                               "Stable")
